@@ -1,0 +1,197 @@
+.container{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.title{
+    max-width: 1000px;
+    position: relative;
+    background-color: #3F3F47;
+    margin: 24px;
+    padding: 12px 12px 32px;
+    font: 600 36px 'Unna', serif;
+}
+.almejas{
+    color: white;
+}
+.cozy{
+    color: #47B7CF;
+}
+.cozy-1{
+    display: none;
+    position: absolute;
+    left: 286px;
+    opacity: 0;
+    color: #47B7CF;
+}
+.cozy-2{
+    display: none;
+    position: absolute;
+    left: 286px;
+    opacity: 0;
+    color: #47B7CF;
+}
+.popular{
+    width: calc(100vw - 48px);
+    background-color: rgba(63, 63, 71, .77);
+    margin: 24px;
+    padding: 12px;
+}
+.popular-title{
+    font: 600 18px 'Unna', serif;
+    color: white;
+    margin-bottom: 16px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font: 200 14px 'Unna', serif;
+    color: white;
+    margin-bottom: 12px;
+    border-bottom-style: dashed;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+}
+.price{
+    color: #47B7CF;
+}
+.goto-button{
+    margin: 36px 0 36px 140px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 100px;
+    background-color:transparent;
+    border: #47B7CF solid 1px;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white; 
+}
+.goto-button:hover{
+    background-color: #47B7CF;
+}
+.offer{
+    display: none;
+    height: 240px;
+    margin-left: 24px;
+    width: calc(100vw - 272px - 96px);
+    background-color: rgba(255, 255, 255, .5);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 2px 2px 1px 0px rgba(10, 10, 10, 0.12);
+}
+.offer-text{
+    width: 192px;
+    font: 600 36px 'Unna', serif;
+    color: #3F3F47;
+}
+.offer-button{
+    margin: 36px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 100px;
+    background-color: #47B7CF;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white; 
+}
+.offer-button:hover{
+    border: #47B7CF solid 1px;
+    background-color: rgba(255, 255, 255, .5);
+    color: #3F3F47;
+}
+@media (min-width:768px) and (max-width:1023px) {
+    .goto-button{
+        display: flex;
+    }
+    .popular{
+        width: 272px;
+    }
+    .title{
+        display: flex;
+        font: 600 64px 'Unna', serif;
+    }
+    .cozy{
+        margin-left: 12px;
+        animation: opacity-1 10s linear 1s infinite normal none;
+    }
+    .cozy-1{
+        display: block;
+        animation: opacity-2 10s linear 1s infinite normal none;
+    }
+    .cozy-2{
+        display: block;
+        animation: opacity-3 10s linear 1s infinite normal none;
+    }
+    .offer{
+        display: block;
+    }
+}
+@media (min-width:1024px) {
+    main{
+        margin-top: 32px;
+    }
+    .page{
+        flex-wrap: nowrap;
+    }
+    .goto-button{
+        display: flex;
+    }
+    .popular{
+        width: 272px;
+        margin-left: 0;
+    }
+    .title{
+        margin: auto;
+        display: flex;
+        font: 600 64px 'Unna', serif;
+    }
+    .cozy{
+        margin-left: 12px;
+        animation: opacity-1 10s linear 1s infinite normal none;
+    }
+    .cozy-1{
+        display: block;
+        animation: opacity-2 10s linear 1s infinite normal none;
+    }
+    .cozy-2{
+        display: block;
+        animation: opacity-3 10s linear 1s infinite normal none;
+    }
+    .offer{
+        display: block;
+        width: 272px;
+        margin-right: 24px;
+    }
+}
+@keyframes opacity-1 {
+    0% {opacity: 1;}
+    10% {opacity: .5;}
+    20% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes opacity-2 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0.5;}
+    40% {opacity: 1;}
+    50% {opacity: 0.5;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes opacity-3 {
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0.5;}
+    80% {opacity: 1;}
+    90% {opacity: 0.5;}
+    100% {opacity: 0;}
+}

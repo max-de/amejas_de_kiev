@@ -1,0 +1,79 @@
+.card-nav{
+    padding: 2px;
+    background-color: rgba(255, 255, 255, .5);
+    color: #47B7CF;
+}
+.card-nav-bottom{
+    color: #47B7CF;
+}
+.get-card{
+    background-color: rgba(63, 63, 71, .77);
+    margin: 24px;
+    padding: 12px;
+}
+.card-description-title{
+    font: 600 18px 'Unna', serif;
+    color: white;
+    margin-bottom: 16px;
+}
+.card-description{
+    font: 400 14px 'Unna', serif;
+    color: white;
+    margin-bottom: 16px;
+}
+.discount{
+    font: 400 14px 'Unna', serif;
+    color: #47B7CF;
+}
+.form-title{
+    font: 600 24px 'Unna', serif;
+    color: white;
+    margin: 20px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.text-form{
+    width: 100%;
+    background-color: transparent;
+    border-bottom-color: rgb(154, 154, 156);
+    border-width: 0 0 1px 0;
+    padding-bottom: 2px;
+    margin-bottom: 24px;
+}
+.text-form::-webkit-input-placeholder { 
+    color: rgb(154, 154, 156);
+    font: 400 14px 'Unna', serif;
+    padding-left: 8px;
+ }
+ .get-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: 400 14px 'Unna', serif;
+    color: #47B7CF;
+    background-color: transparent;
+    border-width: 0;
+    width: 32px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+ }
+ .get-button:hover{
+    background-color: rgba(255, 255, 255, .5);
+ }
+@media (min-width:768px) and (max-width:1023px) {
+    .get-card{
+        width: 272px;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+@media (min-width:1024px) {
+    .get-card{
+        width: 272px;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
